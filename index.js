@@ -1,10 +1,10 @@
-var recipe = {key: "value"}
+var recipes = {key: "value"}
 
-function updateObjectWithKeyAndValue(recipe, key, value) {
+function updateObjectWithKeyAndValue(recipe, keys, value) {
   return Object.assign({}, {key: value})
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(recipe, key, value) {
-  recipe[key] = value;
-  return recipe
+function destructivelyUpdateObjectWithKeyAndValue(recipes, key, value) {
+  recipes[key] = value;
+  return recipes
 }
